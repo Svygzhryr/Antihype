@@ -37,8 +37,9 @@ hr {
 
 .container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1230px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 
@@ -273,7 +274,7 @@ hr {
 /* card */
 
 .card {
-    margin-top: 80px;
+    margin-top: 80px -15px 0;
     display: flex;
     justify-content: space-between;
 }
@@ -284,7 +285,8 @@ hr {
 }
 
 .card_item {
-    width: 380px;
+    width: 33.33333%;
+    padding: 0 15px;
 }
 
 .card_inner:hover .card_img {
@@ -325,6 +327,7 @@ hr {
 .card_img img {
     display: block;
     transition: opacity .1s linear;
+    max-width: 100%;
 }
 
 .card_text {
@@ -1096,4 +1099,78 @@ hr {
 .nahui {
     color: #5B5181;
     font-weight: 700;
+}
+
+
+/* адаптив ёпта */
+
+
+/*-----------------------------------*/
+
+
+/* НОУТЫ */
+
+@media (max-width: 1230px) {
+    /* Intro */
+    .intro_suptitle {
+        font-size: 52px;
+    }
+    .intro_title {
+        font-size: 120px;
+    }
+}
+
+
+/* ПЛАНШЕТЫ */
+
+@media (max-width: 990px) {
+    /* Intro */
+    .intro_suptitle {
+        font-size: 22px;
+    }
+    .intro_title {
+        font-size: 80px;
+    }
+}
+
+@media (max-width: 770px) {
+    .section {
+        padding: 40px 0;
+    }
+    /* Intro */
+    .nav {
+        display: none;
+    }
+    /* Slider*/
+    .slider_text {
+        display: none;
+    }
+    .slider_item.active:before {
+        width: 50%;
+    }
+}
+
+
+/* ТРУБЫ */
+
+@media (max-width: 575px) {
+    .section_suptitle {
+        font-size: 20px;
+    }
+    .section_title {
+        font-size: 24px;
+    }
+    .section_title:after {
+        margin: 20px auto;
+    }
+    .section_header {
+        margin-bottom: 50px;
+    }
+    /* Intro */
+    .intro_suptitle {
+        font-size: 52px;
+    }
+    .intro_title {
+        font-size: 40px;
+    }
 }
