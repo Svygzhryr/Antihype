@@ -274,9 +274,10 @@ hr {
 /* card */
 
 .card {
-    margin-top: 80px -15px 0;
+    margin-top: 50px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .card_inner {
@@ -287,6 +288,10 @@ hr {
 .card_item {
     width: 33.33333%;
     padding: 0 15px;
+}
+
+.card_item:last-child {
+    margin-bottom: 0;
 }
 
 .card_inner:hover .card_img {
@@ -355,6 +360,7 @@ hr {
 
 .stats {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .stat_item {
@@ -386,13 +392,18 @@ hr {
 
 .services {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .services_item {
-    flex: 1 1 0;
-    padding-left: 85px;
+    width: 33.333%;
     position: relative;
-    padding-right: 35px;
+    margin-bottom: 30px;
+    padding: 0 35px 30px 85px;
+}
+
+.services_item-border {
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .services_icon {
@@ -638,9 +649,10 @@ hr {
 
 .logos {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .section--logo {
@@ -788,6 +800,7 @@ hr {
 .blog {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .blog_item {
@@ -1062,6 +1075,7 @@ hr {
 .insta_row {
     display: flex;
     line-height: 0;
+    flex-wrap: wrap;
 }
 
 .insta_img {
@@ -1131,6 +1145,23 @@ hr {
     .intro_title {
         font-size: 80px;
     }
+    /* Stats */
+    .stats {
+        justify-content: center;
+    }
+    .stat_item {
+        flex: none;
+        width: 33%;
+        border: 0;
+        padding: 30px 0;
+    }
+    .services_item {
+        width: 50%;
+        padding-bottom: 0;
+    }
+    .services_item-border {
+        border-bottom: 0;
+    }
 }
 
 @media (max-width: 770px) {
@@ -1147,6 +1178,22 @@ hr {
     }
     .slider_item.active:before {
         width: 50%;
+    }
+    /* Card */
+    .card {
+        justify-content: center;
+    }
+    .card_item {
+        width: 100%;
+        max-width: 410px;
+        margin-bottom: 30px;
+    }
+    .services_item {
+        width: 100%;
+        padding-left: 55px;
+    }
+    .services_icon {
+        left: 0;
     }
 }
 
@@ -1172,5 +1219,16 @@ hr {
     }
     .intro_title {
         font-size: 40px;
+    }
+    /* Stat*/
+    .stat_item {
+        width: 100%;
+        border-bottom: 1px solid white;
+    }
+    .stat_item:last-child {
+        border-bottom: 0;
+    }
+    .stat_count {
+        font-size: 52px;
     }
 }
