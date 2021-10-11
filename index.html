@@ -22,26 +22,33 @@
     <!-- Конец шрифтов -->
     <!-- Подрубка fontawesome'а -->
     <script src="https://kit.fontawesome.com/f2308f7235.js" crossorigin="anonymous"></script>
+
+    <!-- Стили слика -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="header_inner">
-                <div class="header_logo">Антихайп</div>
-                <nav class="nav">
-                    <a class="nav_link" href="#">Кто мы</a>
-                    <a class="nav_link" href="#">Чё делаем</a>
-                    <a class="nav_link" href="#">Работа</a>
-                    <a class="nav_link" href="#">Блог</a>
-                    <a class="nav_link" href="#">Связь</a>
+                <div class="header_logo" data-scroll="#intro">Антихайп</div>
+                <nav class="nav" id="nav">
+                    <a class="nav_link" href="#" data-scroll="#about">Кто мы</a>
+                    <a class="nav_link" href="#" data-scroll="#services">Чё делаем</a>
+                    <a class="nav_link" href="#" data-scroll="#work">Работа</a>
+                    <a class="nav_link" href="#" data-scroll="#blog">Блог</a>
+                    <a class="nav_link" href="#" data-scroll="#follow">Связь</a>
 
 
                 </nav>
+                <button type="button" class="nav_toggle" id="nav_toggle">
+                    <span class="nav-toggle_item">Menu</span>
+                </button>
             </div>
     </header>
 
-    <div class="intro">
+    <div class="intro" id="intro">
         <div class="container">
             <div class="intro_inner">
                 <h2 class="intro_suptitle">Мы едим детей</h2>
@@ -75,7 +82,7 @@
         </div>
     </div>
 
-    <section class="section">
+    <section class="section" id="about">
         <div class="container">
             <div class="section_header">
                 <h3 class="section_suptitle">Чем занимаемся</h3>
@@ -154,7 +161,7 @@
         </container>
     </div>
 
-    <section class="section">
+    <section class="section" id="services">
         <div class="container">
             <div class="section_header">
                 <h3 class="section_suptitle">Чё мы делаем</h3>
@@ -228,30 +235,30 @@
                 </div>
                 <div class="wedo_item">
                     <div class="acc">
-                        <div class="acc_item">
+                        <div class="acc_item" data-collapse="#wedo_1">
                             <div class="acc_header">
                                 <img class="acc_icon" src="img/services/logo1.png">
                                 <div class="acc_title">Дизайнер уебан</div>
                             </div>
-                            <div class="acc_content">Cock and ball torture from Wikipedia, the free encyclopedia at en.wikipedia.org Cock and ball torture (CBT) is a sexual activity involving application of pain or constriction to the male genitals. This may involve directly
+                            <div class="acc_content" id="wedo_1">Cock and ball torture from Wikipedia, the free encyclopedia at en.wikipedia.org Cock and ball torture (CBT) is a sexual activity involving application of pain or constriction to the male genitals. This may involve directly
                                 painful activities, such as wax play, genital spanking, squeezing, ball busting, genital flogging, urethral play, tickle torture, erotic electrostimulation, or even kicking. The recipient of such activities may receive
                                 direct physical pleasure via masochism, knowledge that the play is pleasing to a sadistic dominant.</div>
                         </div>
 
-                        <div class="acc_item active">
+                        <div class="acc_item" data-collapse="#wedo_2">
                             <div class="acc_header">
-                                <img class="acc_icon" src="img/services/logo2.png">
-                                <div class="acc_title">Ха-ха а джса тут нет)00</div>
+                                <img class=" acc_icon " src="img/services/logo2.png ">
+                                <div class="acc_title ">Ха-ха а джса тут нет)00</div>
                             </div>
-                            <div class="acc_content">League of Legends, сокращённо LoL — ролевая видеоигра с элементами стратегии в реальном времени, разработанная и выпущенная компанией Riot Games 27 октября 2009 года для платформ Microsoft Windows и Apple Macintosh. Игра распространяется
+                            <div class="acc_content " id="wedo_2">League of Legends, сокращённо LoL — ролевая видеоигра с элементами стратегии в реальном времени, разработанная и выпущенная компанией Riot Games 27 октября 2009 года для платформ Microsoft Windows и Apple Macintosh. Игра распространяется
                                 по модели free-to-play..</div>
                         </div>
-                        <div class="acc_item">
-                            <div class="acc_header">
+                        <div class="acc_item " data-collapse="#wedo_3">
+                            <div class="acc_header ">
                                 <img class="acc_icon" src="img/services/logo4.png">
                                 <div class="acc_title">Нахуя по тысяче раз одно и то же</div>
                             </div>
-                            <div class="acc_content">Cock and ball torture from Wikipedia, the free encyclopedia at en.wikipedia.org Cock and ball torture (CBT) is a sexual activity involving application of pain or constriction to the male genitals. This may involve directly
+                            <div class="acc_content" id="wedo_3">Cock and ball torture from Wikipedia, the free encyclopedia at en.wikipedia.org Cock and ball torture (CBT) is a sexual activity involving application of pain or constriction to the male genitals. This may involve directly
                                 painful activities, such as wax play, genital spanking, squeezing, ball busting, genital flogging, urethral play, tickle torture, erotic electrostimulation, or even kicking. The recipient of such activities may receive
                                 direct physical pleasure via masochism, knowledge that the play is pleasing to a sadistic dominant.</div>
                         </div>
@@ -270,16 +277,41 @@
         <div class="container">
             <div class="reviews">
 
-                <a class="reviews_button reviews_button--prev" href="#">Prev</a>
-                <a class="reviews_button reviews_button--next" href="#">Next</a>
 
-                <div class="reviews_item">
-                    <img height="140" width="140" class="reviews_photo" src="https://n1s1.starhit.ru/89/9b/ae/899baee7c9f5f08657c0881cb179fc1d/480x497_0_4f9f785c1313fda4ae8e18d5a75fc79d@480x497_0xac120003_8774606181586783903.jpg">
-                    <div class="reviews_text">
-                        "Что за дегенерат придумал эту ебанистику? Даже ебучий блекстар менее кринжово выглядит по сравнению с этой залупой лол)"
+
+                <div data-slider>
+                    <div>
+                        <div class="reviews_item">
+                            <img height="140" width="140" class="reviews_photo" src="https://n1s1.starhit.ru/89/9b/ae/899baee7c9f5f08657c0881cb179fc1d/480x497_0_4f9f785c1313fda4ae8e18d5a75fc79d@480x497_0xac120003_8774606181586783903.jpg">
+                            <div class="reviews_text">
+                                "Что за дегенерат придумал эту ебанистику? Даже ебучий блекстар менее кринжово выглядит по сравнению с этой залупой лол)"
+                            </div>
+                            <div class="reviews_author">
+                                Моргенштерн
+                            </div>
+                        </div>
                     </div>
-                    <div class="reviews_author">
-                        Моргенштерн
+                    <div>
+                        <div class="reviews_item">
+                            <img height="140" width="140" class="reviews_photo" src="https://n1s1.starhit.ru/89/9b/ae/899baee7c9f5f08657c0881cb179fc1d/480x497_0_4f9f785c1313fda4ae8e18d5a75fc79d@480x497_0xac120003_8774606181586783903.jpg">
+                            <div class="reviews_text">
+                                "Что за дегенерат придумал эту ебанистику? Даже ебучий блекстар менее кринжово выглядит по сравнению с этой залупой лол)"
+                            </div>
+                            <div class="reviews_author">
+                                Моргенштерн
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="reviews_item">
+                            <img height="140" width="140" class="reviews_photo" src="https://n1s1.starhit.ru/89/9b/ae/899baee7c9f5f08657c0881cb179fc1d/480x497_0_4f9f785c1313fda4ae8e18d5a75fc79d@480x497_0xac120003_8774606181586783903.jpg">
+                            <div class="reviews_text">
+                                "Что за дегенерат придумал эту ебанистику? Даже ебучий блекстар менее кринжово выглядит по сравнению с этой залупой лол)"
+                            </div>
+                            <div class="reviews_author">
+                                Моргенштерн
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -429,7 +461,7 @@
 
     </div>
 
-    <section class="section">
+    <section class="section" id="work">
         <div class="container">
             <div class="section_header">
                 <h3 class="section_suptitle">Профессия ёпта</h3>
@@ -508,9 +540,6 @@
         <div class="container">
             <div class="reviews">
 
-                <a class="reviews_button reviews_button--prev" href="#">Prev</a>
-                <a class="reviews_button reviews_button--next" href="#">Next</a>
-
                 <div class="reviews_item">
                     <img height="200" width="200" class="reviews_photo reviews_photo--second" src="https://sun9-70.userapi.com/impg/bjSLsQVuyZYDrR_5zmWD6OgoS6MQseg80kstzw/st7JZCtyjE8.jpg?size=604x524&quality=96&sign=d341d90283ddae54d6f9958d0d2ef051&type=album">
                     <div class="reviews_text">
@@ -564,7 +593,7 @@
         </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="blog">
         <div class="container">
             <div class="section_header">
                 <h3 class="section_suptitle">Охуительные истории</h3>
@@ -664,7 +693,7 @@
 
 
     <footer class="footer">
-        <div class="container footer_container">
+        <div class="container footer_container" id="follow">
             <div class="footer_items">
                 <div class="footer_item footer_ahype">
                     <h1 class="ahype_title">AntiHype</h1>
@@ -756,6 +785,13 @@
         </container>
     </footer>
 </body>
+<!-- Подрубка jquery -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- Подрубка пиздатых слайдеров -->
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 <script src="js/script.js "></script>
 
 </html>
