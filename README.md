@@ -1,2 +1,2 @@
 # svygzhryr.github.io
-оу да
+something about like so
