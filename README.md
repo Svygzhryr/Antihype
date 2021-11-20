@@ -1,2 +1,2 @@
 # svygzhryr.github.io
-something about like so
+A simple single-page site using vanilla HTML, CSS and a little bit of a jQuery. Nothing special at all.
