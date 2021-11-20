@@ -33,7 +33,6 @@ hr {
 }
 
 
-/* заранее ебанули контейнер, сориентировавшись на 1200пикселей разметку в фотике ебаном */
 
 .container {
     width: 100%;
@@ -59,7 +58,7 @@ hr {
 }
 
 .intro_title {
-    font-size: 150px;
+    font-size: 110px;
     font-weight: 700;
     text-transform: uppercase;
     color: white;
@@ -83,7 +82,7 @@ hr {
 }
 
 .intro_suptitle {
-    font-size: 72px;
+    font-size: 64px;
     color: white;
     font-family: 'Pacifico', cursive;
     text-align: center;
@@ -844,8 +843,8 @@ hr {
 .reviews_photo.reviews_photo--second {
     border: none;
     border-radius: 50%;
-    padding-right: 80px;
-    padding-bottom: 60px;
+    padding-right: 10px;
+
 }
 
 
@@ -917,6 +916,7 @@ hr {
 
 .blog_item {
     padding: 0 15px;
+    width: 33%;
 }
 
 .blog_header {
